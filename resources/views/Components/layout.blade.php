@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Bolsa de empleo | Encuentra tu nuevo empleo</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="h-full">
@@ -18,9 +18,9 @@
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
-                <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
-                <x-nav-link href="/contact" :active="request()->is('contact')" >Contact</x-nav-link>
+                <x-nav-link href="/" :active="request()->is('/')">Inicio</x-nav-link>
+                <x-nav-link href="/jobs" :active="request()->is('jobs')">Empleos</x-nav-link>
+                <x-nav-link href="/contact" :active="request()->is('contact')" >Contacto</x-nav-link>
 
               </div>
             </div>
@@ -28,13 +28,13 @@
           <div class="hidden md:block">
             <div class="ml-4 flex items-center md:ml-6">
                 @guest
-                    <x-nav-link href="/login" :active="request()->is('login')">Log in</x-nav-link>
-                    <x-nav-link href="/register" :active="request()->is('register')" >Register</x-nav-link>
+                    <x-nav-link href="/login" :active="request()->is('login')">Inicio sesión</x-nav-link>
+                    <x-nav-link href="/register" :active="request()->is('register')" >Registrar</x-nav-link>
                 @endguest
                 @auth
                 <form action="/logout" method="POST">
                     @csrf
-                    <x-form-button>Log Out</x-form-button>
+                    <x-form-button>Cerrar sesión</x-form-button>
                 </form>
                 @endauth
             </div>
@@ -91,8 +91,8 @@
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 sm:flex sm:justify-between">
         <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
         @if(Auth::check())
-          <x-button href="{{ route('jobs.create') }}" >Create Job</x-button>  
-        @endif        
+          <x-button href="{{ route('jobs.create') }}" >Create Job</x-button>
+        @endif
       </div>
     </header>
     <main>

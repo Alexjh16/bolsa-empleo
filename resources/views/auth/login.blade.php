@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:heading>
-        Login
+        Iniciar sesión
     </x-slot>
     <form method="POST" action="/login">
         @csrf
@@ -19,7 +19,7 @@
                 </x-form-field>
 
                 <x-form-field>
-                    <x-form-label for="password">Password</x-form-label>
+                    <x-form-label for="password">Clave</x-form-label>
                         <div class="mt-2">
                             <x-form-input name="password" type="password" placeholder="********" required/>
                             <x-form-error name="password" />
@@ -32,8 +32,8 @@
         </div>
 
         <div class="mt-6 flex items-center justify-end gap-x-6">
-          <button type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</button>
-          <x-form-button>Log In</x-form-button>
+          <button type="button" class="text-sm/6 font-semibold text-gray-900 cursor-pointer">Cancel</button>
+          <x-form-button>Log in</x-form-button>
         </div>
       </form>
 </x-layout>
