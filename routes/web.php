@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FileController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Job;
 use App\Http\Controllers\JobController;
@@ -32,6 +33,9 @@ Route::post('/login', [SessionController::class, 'store']);
 Route::post('/logout', [SessionController::class, 'destroy']);
 
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+
+Route::get('/perfil', function () {return view('perfil');})->middleware('auth');
+
+
+Route::post('/upload/profile', [FileController::class, 'uploadProfilePicture'])->name('upload.profile');
+Route::post('/upload/resume', [FileController::class, 'uploadResume'])->name('upload.resume');

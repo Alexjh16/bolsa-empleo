@@ -41,7 +41,7 @@ class JobController extends Controller
         ]);
         Job::create([
             'title' => request('title'),
-            'salary' => request('salary'),
+            'salary' => "$".request('salary').' USDT',
             'employer_id' => 1
         ]);
 

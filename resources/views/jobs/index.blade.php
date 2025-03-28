@@ -30,7 +30,7 @@
                 <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nostrum, voluptate soluta perferendis voluptatem tempore nemo laboriosam ab officiis exercitationem illo tenetur numquam maxime ad consectetur iste, dolores impedit. Voluptatibus!</p>
                 <div class="mt-6 flex justify-between items-center">
                     <span class="text-primary font-bold">pays: {{ $job->salary }}</span>
-                    <a href="{{ route('jobs.show', $job->id) }}" class="text-navy hover:text-primary font-medium">Ver detalles →</a>
+                    <a href="{{ route('jobs.show', $job->id) }}" class="text-navy hover:text-primary font-medium text-primary   ">Ver detalles →</a>
                 </div>
             </div>
         </div>
