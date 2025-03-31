@@ -296,34 +296,34 @@
                             <div class="space-y-4">
                                 <div class="flex justify-between">
                                     <span class="text-gray-600">Publicado:</span>
-                                    <span class="font-medium">15 de marzo, 2025</span>
+                                    <span class="font-medium text-black">15 de marzo, 2025</span>
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="text-gray-600">Ubicación:</span>
-                                    <span class="font-medium">Remoto (México)</span>
+                                    <span class="font-medium text-black">Remoto (México)</span>
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="text-gray-600">Tipo:</span>
-                                    <span class="font-medium">Tiempo completo</span>
+                                    <span class="font-medium text-black">Tiempo completo</span>
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="text-gray-600">Salario:</span>
-                                    <span class="font-bold">{{ $job->salary }}</span>
+                                    <span class="font-bold text-black">{{ $job->salary }}</span>
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="text-gray-600">Experiencia:</span>
-                                    <span class="font-medium">3+ años</span>
+                                    <span class="font-medium text-black">3+ años</span>
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="text-gray-600">Aplicaciones:</span>
-                                    <span class="font-medium">47 candidatos</span>
+                                    <span class="font-medium text-black">47 candidatos</span>
                                 </div>
                             </div>
                             <div class="mt-6 space-y-4">
                                 <div x-data="postularForm()">
                                     <form @submit.prevent="submitForm">
                                         <button type="submit"
-                                            class="w-full bg-primary cursor-pointer bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 px-4 rounded"
+                                            class="w-full cursor-pointer bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 px-4 rounded"
                                             :disabled="submitting">
                                             <span x-show="!submitting">Postularme ahora</span>
                                             <span x-show="submitting" class="flex items-center">
