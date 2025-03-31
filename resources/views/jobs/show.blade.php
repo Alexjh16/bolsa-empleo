@@ -10,6 +10,8 @@
         </p>
     @endcan
 
+    <!-- Encabezado -->
+
 
     <!-- Contenido principal -->
     <main class="py-8">
