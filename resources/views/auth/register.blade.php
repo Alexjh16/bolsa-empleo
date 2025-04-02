@@ -11,7 +11,7 @@
 
                 <x-form-field>
                     <x-form-label for="first_name" required>First Name</x-form-label>
-                    <div class="mb-2">
+                    <div class="mb-4 mt-2">
                         <x-form-input name="first_name" id="first_name" required/>
                         <x-form-error name="first_name" />
                     </div>
@@ -19,7 +19,7 @@
 
                 <x-form-field>
                     <x-form-label for="last_name" required>Last Name</x-form-label>
-                    <div class="mb-2">
+                    <div class="mb-4 mt-2">
                         <x-form-input name="last_name" required/>
                         <x-form-error name="last_name" />
                     </div>
@@ -27,7 +27,7 @@
 
                 <x-form-field>
                     <x-form-label for="email" required>Email</x-form-label>
-                    <div class="mb-2">
+                    <div class="mb-4 mt-2">
                         <x-form-input name="email" type="email" required/>
                         <x-form-error name="email" />
                     </div>
@@ -35,7 +35,7 @@
 
                 <x-form-field>
                     <x-form-label for="password" required>Password</x-form-label>
-                    <div class="mb-2">
+                    <div class="mb-4 mt-2">
                         <x-form-input name="password" type="password" required/>
                         <x-form-error name="password" />
                     </div>
@@ -43,7 +43,7 @@
 
                 <x-form-field>
                     <x-form-label for="password_confirmation" required>Confirm Password</x-form-label>
-                    <div class="mb-2">
+                    <div class="mb-4 mt-2">
                         <x-form-input name="password_confirmation" type="password" required/>
                         <x-form-error name="password_confirmation" />
                     </div>
