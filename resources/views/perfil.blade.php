@@ -30,7 +30,6 @@
                     </a>
 
                     <x-ul-profile></x-ul-profile>
-
                 @else
                     <a href="{{ route('login') }}"
                         class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal">
@@ -53,7 +52,9 @@
             <div
                 class="text-[13px] leading-[20px] flex-1 p-6 pb-12 lg:p-20 bg-white dark:bg-[#161615] dark:text-[#EDEDEC] shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d] rounded-bl-lg rounded-br-lg lg:rounded-tl-lg lg:rounded-br-none">
                 <h1 class="mb-1 font-medium">Administra tu perfil, aquí puedes: </h1>
-                <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.  <br>Totam eos ex sunt rem similique repellendus officiis repudiandae quo minima perspiciatis.</p>
+                <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. <br>Totam eos ex sunt rem similique repellendus officiis repudiandae quo minima perspiciatis.
+                </p>
                 <ul class="flex flex-col mb-4 lg:mb-6">
                     <li
                         class="flex items-center gap-4 py-2 relative before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A] before:top-1/2 before:bottom-0 before:left-[0.4rem] before:absolute">
@@ -86,26 +87,25 @@
                         </span>
                     </li>
                 </ul>
-                <ul class="flex gap-3 text-sm leading-normal">
-                    <li>
-                        <form action="{{ route('upload.resume') }}" method="POST" enctype="multipart/form-data">
-                            @csrf
-
-                            <input required type="file" class="file-input w-full max-w-xl mb-3" name="profile_picture" />
-                            <button type="submit" class="cursor-pointer inline-flex items-center px-6 py-2.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
-                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
+               <form action="{{ route('upload.resume') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <ul class="flex gap-3 text-sm leading-normal">
+                        <li>
+                            <input required type="file" class="file-input w-full max-w-xl mb-3" name="resume"/>
+                            <button type="submit"
+                                class="cursor-pointer inline-flex items-center px-6 py-2.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
                                 </svg>
-                                <span >Cargar archivos </span>
+                                <span>Cargar archivos </span>
                             </button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-            <div
+                        </li>
+                    </ul>
+                  </div>
+                  <div
                 class="bg-[#fff2f2] dark:bg-[#1D0002] relative lg:-ml-px -mb-px lg:mb-0 rounded-t-lg lg:rounded-t-none lg:rounded-r-lg aspect-[335/376] lg:aspect-auto w-full lg:w-[438px] shrink-0 overflow-hidden">
-
-
 
                 <div class="flex items-center justify-center w-full h-full">
                     <label for="dropzone-file"
@@ -123,7 +123,8 @@
                                         <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
                                             <span class="font-semibold">Cargar foto de perfil</span>
                                         </p>
-                                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX.
+                                            800x400px)</p>
                                     </div>
                                 </template>
                                 <template x-if="imageUrl">
@@ -132,21 +133,18 @@
                                         <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
                                             <span class="font-semibold">Foto seleccionada</span>
                                         </p>
-                                        <p class="text-xs text-gray-500 dark:text-gray-400">Haz clic para cambiar la imagen</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">Haz clic para cambiar la
+                                            imagen</p>
                                     </div>
                                 </template>
                                 <input id="dropzone-file" type="file" accept="image/*"
                                     @change="imageUrl = URL.createObjectURL($event.target.files[0])"
-                                    name="profile_picture"
-                                    class="hidden"
-                                />
+                                    name="profile_picture" class="hidden" />
                             </div>
                         </div>
                     </label>
-                </div>
-
-
-
+                  </div>
+               </form>
             </div>
         </main>
     </div>

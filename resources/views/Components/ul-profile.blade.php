@@ -10,7 +10,7 @@
             x-on:keydown.down.prevent="openWithKeyboard = true"
             class="rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white"
             aria-controls="userMenu">
-            <img src="https://penguinui.s3.amazonaws.com/component-assets/avatar-8.webp"
+            <img src="{{ route('photo.profile') }}?v={{ now()->timestamp}}"
                 alt="User Profile" class="size-10 rounded-full object-cover" />
         </button>
         <!-- User Dropdown -->
