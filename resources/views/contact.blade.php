@@ -21,7 +21,7 @@
                                             id="name"
                                             name="name"
                                             x-model="form.name"
-                                            class="shadow-sm focus:ring-primary focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
+                                            class="shadow-sm focus:ring-primary text-base text-gray-900 focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
                                             :class="{'border-red-500': errors.name}"
                                         >
                                         <p x-show="errors.name" x-text="errors.name" class="mt-1 text-sm text-red-600"></p>
@@ -37,7 +37,7 @@
                                             id="email"
                                             name="email"
                                             x-model="form.email"
-                                            class="shadow-sm focus:ring-primary focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
+                                            class="shadow-sm focus:ring-primary text-base text-gray-900 focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
                                             :class="{'border-red-500': errors.email}"
                                         >
                                         <p x-show="errors.email" x-text="errors.email" class="mt-1 text-sm text-red-600"></p>
@@ -53,7 +53,7 @@
                                             id="phone"
                                             name="phone"
                                             x-model="form.phone"
-                                            class="shadow-sm focus:ring-primary focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
+                                            class="shadow-sm focus:ring-primary text-base text-gray-900 focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
                                         >
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@
                                             id="subject"
                                             name="subject"
                                             x-model="form.subject"
-                                            class="shadow-sm focus:ring-primary focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
+                                            class="shadow-sm focus:ring-primary text-base text-gray-900 focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
                                             :class="{'border-red-500': errors.subject}"
                                         >
                                         <p x-show="errors.subject" x-text="errors.subject" class="mt-1 text-sm text-red-600"></p>
@@ -83,7 +83,7 @@
                                             name="message"
                                             rows="5"
                                             x-model="form.message"
-                                            class="shadow-sm focus:ring-primary focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
+                                            class="shadow-sm focus:ring-primary  text-base text-gray-900 focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
                                             :class="{'border-red-500': errors.message}"
                                         ></textarea>
                                         <p x-show="errors.message" x-text="errors.message" class="mt-1 text-sm text-red-600"></p>
@@ -98,7 +98,7 @@
                                             id="inquiry_type"
                                             name="inquiry_type"
                                             x-model="form.inquiry_type"
-                                            class="shadow-sm focus:ring-primary focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
+                                            class="shadow-sm focus:ring-primary text-base text-gray-900 focus:border-primary block w-full sm:text-sm border-gray-300 rounded-md p-3 border"
                                         >
                                             <option value="">Seleccione una opción</option>
                                             <option value="general">Consulta general</option>
@@ -228,16 +228,16 @@
                             <h2 class="text-2xl font-bold text-gray-900 mb-6">Horario de atención</h2>
                             <div class="space-y-3">
                                 <div class="flex justify-between">
-                                    <span class="text-gray-600">Lunes - Viernes</span>
-                                    <span class="font-medium">9:00 AM - 6:00 PM</span>
+                                    <span class="text-gray-900">Lunes - Viernes</span>
+                                    <span class="text-gray-600 font-medium">9:00 AM - 6:00 PM</span>
                                 </div>
                                 <div class="flex justify-between">
-                                    <span class="text-gray-600">Sábado</span>
-                                    <span class="font-medium">10:00 AM - 2:00 PM</span>
+                                    <span class="text-gray-900">Sábado</span>
+                                    <span class="text-gray-600 font-medium">10:00 AM - 2:00 PM</span>
                                 </div>
                                 <div class="flex justify-between">
-                                    <span class="text-gray-600">Domingo</span>
-                                    <span class="font-medium">Cerrado</span>
+                                    <span class="text-gray-900">Domingo</span>
+                                    <span class="text-gray-600 font-medium">Cerrado</span>
                                 </div>
                             </div>
                         </div>

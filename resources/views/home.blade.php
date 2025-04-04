@@ -13,7 +13,7 @@
 
             <div class="mt-10 max-w-xl mx-auto" x-data="{ open: false }">
                 <div class="flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden">
-                    <input type="text" placeholder="Buscar empleos..." class="flex-1 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <input type="text" placeholder="Buscar empleos..." class="flex-1 px-4 py-3 text-base text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary">
                     <button class="bg-indigo-700 hover:bg-indigo-800 cursor-pointer text-white font-bold py-3 px-6">
                         Buscar
                     </button>
