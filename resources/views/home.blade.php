@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:heading>
         Bienvenido a tu nuevo empleo.
-    </x-slot>
+</x-slot>
 
     <!-- Hero Section -->
     <section class="bg-white">

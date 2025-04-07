@@ -38,7 +38,9 @@
                             @auth
 
 
-                                <x-ul-profile></x-ul-profile>
+                                <x-ul-profile>
+                                    
+                                </x-ul-profile>
 
 
                             @endauth
@@ -79,7 +81,7 @@
                     <div class="flex items-center px-5">
                         <div class="shrink-0">
                             <img class="size-10 rounded-full"
-                                src="https://refactoring.guru/images/content-public/logos/logo-new.png?" alt="">
+                                src="{{ route('photo.profile') }}" alt="">
                         </div>
                         <div class="ml-3">
                             <div class="text-base/5 font-medium text-white">Alexander Liskov</div>
