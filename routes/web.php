@@ -43,15 +43,9 @@ Route::get('/photo/profile/navar', function() {
     
     $user = Auth::user();
     $path = $user->profile_picture;
-    //dd($path);
     if(!empty($path)){
-        //dd('hay archivo');
         return response()->file(Storage_path('app/private/' . $path));
     }else{
         return response()->file(Storage_path('app/private/photo_profile/default_profile.png'));
-        //dd('no hay archivo');
     }
-    //dd('ruta', $path);
-
-    
 })->name('photo.profile');
