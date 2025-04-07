@@ -325,7 +325,7 @@
                                 <div x-data="postularForm()">
                                     <form @submit.prevent="submitForm">
                                         <button type="submit"
-                                            class="w-full bg-primary cursor-pointer bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 px-4 rounded"
+                                            class="w-full cursor-pointer bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 px-4 rounded"
                                             :disabled="submitting">
                                             <span x-show="!submitting">Postularme ahora</span>
                                             <span x-show="submitting" class="flex items-center">
